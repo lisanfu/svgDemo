@@ -1,0 +1,16 @@
+SVG.Defs = function Defs(){
+    this.constructor.call(this,SVG.createElement('defs'));
+}
+
+//inherit from SVG.Element
+SVG.Defs.prototype = new SVG.Element();
+
+//defs clippath
+SVG.Defs.prototype.clipath = function(){
+    var e = new SVG.ClipPath();
+    this.add(e);
+    return e;
+}
+
+//include the container object
+SVG.Defs.include(SVG.Container);
