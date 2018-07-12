@@ -5,6 +5,7 @@ SVG.ClipPath = function ClipPath(){
     this.constructor.call(this,SVG.create('clipPath'));
     this.id = '_' + (clipID++);
     this.attr('id',this.id);
+
 };
 
 //inherit from SVG.Element

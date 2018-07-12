@@ -1,3 +1,4 @@
+
 SVG.Document = function(e){
     this.setAttribute.call(this,SVG.create('svg'));
 

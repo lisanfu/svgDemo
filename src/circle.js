@@ -1,11 +1,11 @@
 SVG.Circle = function Circle(){
     this.constructor.call(this,SVG.create('circle'));
+
 }
 
 //inherit from SVG.Shape
 
 SVG.Circle.prototype = new SVG.Shape();
-
 //add circle-specific function
 SVG.Utils.merge(SVG.Circle,{
     move: function(x,y){
@@ -27,3 +27,4 @@ SVG.Utils.merge(SVG.Circle,{
         this.attr('cy',cy || ((this.attrs.y || 0) + r));
     }
 });
+

@@ -1,3 +1,4 @@
+
 SVG.Element = function Element(node){
     this.node = node;
     this.attrs = {};

@@ -7,6 +7,7 @@ SVG.Container = {
             i = i == null ? this.children().length :i;
             this.children().splice(i,0,e);
             this.node.insertBefore(e.node,this.node.childNodes[i + 1]);
+
             e.parent = this;
         }
         return this;
@@ -46,6 +47,7 @@ SVG.Container = {
             var e = this.children()[i];
             this.children().splice(i,1);
             this.node.removeChild(e.node);
+
             e.parent = null;
         }
         return this;
@@ -57,12 +59,12 @@ SVG.Container = {
         }
         return this._defs;
     },
-    goup: function(){
+    group: function(){
         var e = new SVG.Group();
             this.add(e);
         return e;
     },
-    
+
     rect: function(v){
         return this.place(new SVG.Rect(),v)
     },
