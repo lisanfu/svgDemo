@@ -1,5 +1,5 @@
 SVG.Image = function Image(){
-    this.drag = new SVG.Draggable(this);
+  
     this.constructor.call(this,SVG.createElement('image'));
 };
 
